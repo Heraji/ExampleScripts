@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FarClippingOnLayer : MonoBehaviour
+public class SimpleCullingOnLayer : MonoBehaviour
 {
     public float farClippingAmount = 100.0f;
     [Range(0, 31)]public int onLayer;
