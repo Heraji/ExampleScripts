@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FilmTracker</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="js/libraryscript.js"></script>
+
+</head>
+<body onload="loadlist()">
+
+<div>
+    <img class="logo" src="images/logo.png" alt="Logo">
+    <h1 class="font">FilmTracker</h1>
+</div>
+
+<div class="topbar">
+    <a href="index.html">Films</a>
+    <a id="libBtn" href="library.html">My Library</a>
+
+    <div class="login-container">
+
+            <input id="log" name="loginText" type="text" placeholder="Username" value="">
+            <button onclick="loginFunc(document.getElementById('log').value)" type="login">login</button>
+    </div>
+</div>
+
+    <button class="Cloud" id="save" onclick="saveToCloud()">Save to Cloud</button>
+    <button class="Cloud" id="load" onclick="loadFromCloud()">Load from Cloud</button>
+
+</body>
+
+</html>

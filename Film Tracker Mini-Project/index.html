@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FilmTracker</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/mainscript.js"></script>
+    <script src="js/libraryscript.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <h1 class="font">FilmTracker</h1>
+    </div>
+
+    <div class="topbar">
+        <a class="films" onclick='TMDb_News()'>New Films</a>
+        <a class="films" onclick='TMDb_Popular()'>Popular Films</a>
+        <a class="films" onclick='TMDb_Best()'>Bestsellers</a>
+        <a id="libBtn" href="library.html">My Library</a>
+
+
+        <div class="login-container">
+            <input id="log" type="text" placeholder="Username" name="loginText" value="">
+            <button onclick="loginFunc(document.getElementById('log').value)" type="login">login</button>
+        </div>
+    </div>
+
+    <table style="width:90%">
+        <tr class="column">
+            <th class="poster"><img id="image1" src="" style="width:100%" onclick="add_film(image1.alt, image1.title, 1)" alt="" title=""/></th>
+            <th class="poster"><img id="image2" src="" style="width:100%" onclick="add_film(image2.alt, image2.title, 2)" alt="" title=""/></th>
+            <th class="poster"><img id="image3" src="" style="width:100%" onclick="add_film(image3.alt, image3.title, 3)" alt="" title=""/></th>
+            <th class="poster"><img id="image4" src="" style="width:100%" onclick="add_film(image4.alt, image4.title, 4)" alt="" title=""/></th>
+            <th class="poster"><img id="image5" src="" style="width:100%" onclick="add_film(image5.alt, image5.title, 5)" alt="" title=""/></th>
+            <th class="poster"><img id="image6" src="" style="width:100%" onclick="add_film(image6.alt, image6.title, 6)" alt="" title=""/></th>
+        </tr>
+        <tr class="column">
+            <th class="poster"><img id="image7" src="" style="width:100%" onclick="add_film(image7.alt, image7.title, 7)" alt="" title=""/></th>
+            <th class="poster"><img id="image8" src="" style="width:100%" onclick="add_film(image8.alt, image8.title, 8)" alt="" title=""/></th>
+            <th class="poster"><img id="image9" src="" style="width:100%" onclick="add_film(image9.alt, image9.title, 9)" alt="" title=""/></th>
+            <th class="poster"><img id="image10" src="" style="width:100%" onclick="add_film(image10.alt, image10.title, 10)" alt="" title=""/></th>
+            <th class="poster"><img id="image11" src="" style="width:100%" onclick="add_film(image11.alt, image11.title, 11)" alt="" title=""/></th>
+            <th class="poster"><img id="image12" src="" style="width:100%" onclick="add_film(image12.alt, image12.title, 12)" alt="" title=""/></th>
+        </tr>
+        <tr class="column">
+            <th class="poster"><img id="image13" src="" style="width:100%" onclick="add_film(image13.alt, image13.title, 13)" alt="" title=""/></th>
+            <th class="poster"><img id="image14" src="" style="width:100%" onclick="add_film(image14.alt, image14.title, 14)" alt="" title=""/></th>
+            <th class="poster"><img id="image15" src="" style="width:100%" onclick="add_film(image15.alt, image15.title, 15)" alt="" title=""/></th>
+            <th class="poster"><img id="image16" src="" style="width:100%" onclick="add_film(image16.alt, image16.title, 16)" alt="" title=""/></th>
+            <th class="poster"><img id="image17" src="" style="width:100%" onclick="add_film(image17.alt, image17.title, 17)" alt="" title=""/></th>
+            <th class="poster"><img id="image18" src="" style="width:100%" onclick="add_film(image18.alt, image18.title, 18)" alt="" title=""/></th>
+        </tr>
+    </table>
+
+    <script>    // JQuery effects
+        $(function () {
+            $(".column").fadeOut(0).fadeIn(700);
+        });
+        $(".films").click(function () {
+            $(".column").fadeOut(0).fadeIn(700);
+        })
+    </script>
+
+</body>
+</html>
