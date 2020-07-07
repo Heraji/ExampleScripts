@@ -196,6 +196,9 @@ namespace SaveLoadSystem
 
             foreach (var saveable in saveables)
             {
+                if (saveable.GetContainer() == null)
+                    continue;
+
                 if (saveable.savePosition)
                     saveable.transform.position = saveable.GetContainer().Position;
 
