@@ -9,6 +9,9 @@ namespace HustedAudioManager
     public class AudioManager : MonoBehaviour
     {
         public SoundEvent[] soundEvents;
+        // public WwiseEvent[] wwiseEvents;
+        // NOTE: Other types of sound event classes can be referenced here or they can extend the normal SoundEvent class with this functionality (Like supporting Wwise)
+
         private AudioSource thisAudioSource;
 
         private void Awake()
