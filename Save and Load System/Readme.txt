@@ -1,3 +1,5 @@
+(I still need to improve this code with interfaces, so it's easier to swap out the save/load method if needed)
+
 Have one SavePointManager.cs on a gameobject of your choice per scene you want to use the save and load system.
 
 Attach a Saveable.cs script on each object you want to be saved and loaded.
